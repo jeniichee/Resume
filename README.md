@@ -1,1 +1,1 @@
-# My resume in LaTeX
+My resume in LaTeX
