@@ -7,27 +7,14 @@
 \usepackage[empty]{fullpage}
 \usepackage{fancyhdr}
 \usepackage[utf8]{inputenc}
- \usepackage{amsmath}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{tabularx}
 
 % \usepackage{latexsym}
 % \usepackage{marvosym}
 % \usepackage[usenames,dvipsnames]{color}
 % \usepackage{verbatim}
-
-% Formatting 
-\pagestyle{fancy}
-\fancyhf{} 
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-\titleformat{\section}{\large\bfseries}{\thesection}{0em}{}[\color{black}\titlerule \vspace{-5pt}
-\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
-
-\setlist{noitemsep}
-\setlength{\tabcolsep}{0in}
-
-\urlstyle{same}
 
 % Margins
 \addtolength{\oddsidemargin}{-0.375in}
@@ -39,6 +26,21 @@
 \raggedbottom
 \raggedright
 
+% Formatting 
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+
+\setlist{noitemsep}
+\setlength{\tabcolsep}{0in}
+
+\urlstyle{same}
+
 %-------------------------------------------
 
 
@@ -48,19 +50,57 @@
 \begin{center}
     \textbf{\huge Jennifer Cheung}
     \\
-    \text{\footnotesize Boston, MA \textbar \hspace{0em} P:781-219-8087 }
-    
+    \text{\footnotesize Boston, MA\textbar\hspace{0em} P:781-219-8087 
+    \textbar\hspace{0em}\href{mailto: cheung.jenn@northeastern.edu}{cheung.jenn@northeastern.edu}\textbar\hspace{0em}
+    \href{https://jeniichee.github.io/}{website}}
 \end{center}
-
 
 % EDUCATION
 \section*{Education}
-
-
+\begin{tabularx}{\textwidth}{ 
+  >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
+  >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
+  \hspace*{0.03mm} 
+  Northeastern University, Boston MA & 2021\textemdash2025 \\
+  \hspace*{0.03mm}
+  \footnotesize\textit{Bachelor of Science in Computer Science and Behavioral Neuroscience} & {\footnotesize\textbf{GPA: }}{\footnotesize 3.42/4.00}
+\end{tabularx}
 
 % EXPERIENCE
 \section*{Experience}
-
+\begin{tabularx}{\textwidth}{ 
+  >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
+  >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
+  \hspace*{0.03mm} 
+  {AI/ML Research Assistant} & Remote \\
+  \hspace*{0.03mm}
+  \footnotesize\textit{Queen's University Belfast} & {\footnotesize{Jan 2024\textemdash Present}}
+\end{tabularx}
+\begin{itemize}
+    \item 
+\end{itemize}
+\begin{tabularx}{\textwidth}{ 
+  >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
+  >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
+  \hspace*{0.03mm} 
+  {EXP Makerspace Staff} & Boston, MA \\
+  \hspace*{0.03mm}
+  \footnotesize\textit{Northeastern University} & {\footnotesize{Feb 2023\textemdash Present}}
+\end{tabularx}
+\begin{itemize}
+    \item 
+\end{itemize}
+\begin{tabularx}{\textwidth}{ 
+  >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
+  >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
+  \hspace*{0.03mm} 
+  {Barista} & Boston, MA \\
+  \hspace*{0.03mm}
+  \footnotesize\textit{Starbucks Coffee Company} & {\footnotesize{June 2021\textemdash May 2022}}
+\end{tabularx}
+\begin{itemize}
+    \item 
+\end{itemize}
 
 
 % PROJECTS
