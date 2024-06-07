@@ -3,25 +3,22 @@
 % Packages 
 \usepackage{titlesec}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage[empty]{fullpage}
 \usepackage{fancyhdr}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{xcolor}
 \usepackage{tabularx}
-
-% \usepackage{latexsym}
-% \usepackage{marvosym}
-% \usepackage[usenames,dvipsnames]{color}
-% \usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.92]{helvet}
 
 % Margins
 \addtolength{\oddsidemargin}{-0.375in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{0.5in}
 
 \raggedbottom
 \raggedright
@@ -41,174 +38,133 @@
 
 \urlstyle{same}
 
-%-------------------------------------------
+% Custom Commands
+\renewcommand{\familydefault}{\sfdefault}
+% \renewcommand{\rmdefault}{georgia}
 
+%-------------------------------------------
 
 \begin{document}
 
 % HEADING 
 \begin{center}
-    \textbf{\huge Jennifer Cheung}
-    \\
-    \text{\footnotesize Boston, MA\textbar\hspace{0em} P:781-219-8087 
-    \textbar\hspace{0em}\href{mailto: cheung.jenn@northeastern.edu}{cheung.jenn@northeastern.edu}\textbar\hspace{0em}
-    \href{https://jeniichee.github.io/}{portfolio}}
+    {\rmfamily\huge{\textsc{\textbf{Jennifer Cheung}}}}\\
+    {\rmfamily\footnotesize { Boston, MA }\textbar{ P:781-219-8087 } 
+    \textbar\href{mailto: cheung.jenn@northeastern.edu}{ cheung.jenn@northeastern.edu }\textbar
+    \href{https://github.com/jeniichee}{ github }}
 \end{center}
 
 % EDUCATION
-\section*{Education}
+\section*{\rmfamily Education}
 \begin{tabularx}{\textwidth}{ 
   >{\hsize=0.8\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
   >{\hsize=0.2\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
   \hspace*{0.03mm} 
-  Northeastern University, Boston MA & 2021\textemdash2025 \\
+  \textbf{Northeastern University, Boston MA} & \textbf{Sep 2021\textemdash Dec 2024}\\
   \hspace*{0.03mm}
-  \footnotesize\textit{Bachelor of Science in Computer Science and Behavioral Neuroscience} & {\footnotesize\textbf{GPA: }}{\footnotesize 3.42/4.00}\\
+  \footnotesize\textit{Candidate for Bachelor of Science in Computer Science and Behavioral Neuroscience} &{\footnotesize\textbf{GPA: }}{\footnotesize 3.42/4.00}\\
 \end{tabularx}
-% \hspace*{0.03mm} Dean's List 2021-2022 \\
-% \hspace*{0.03mm} \textbf{Relevant Coursework:} Object-Oriented Design, Algorithms and Data, Database Design, Artificial Intelligence
 
-% EXPERIENCE
-\section*{Experience}
+\vspace{1mm}
+\hspace*{0.03mm} \textbf{Relevant Coursework:} {OOD, Algorithms and Data Structures, Database Design, AI, Foundation of Data Science}
+
+% PROJECTS
+\section*{\rmfamily Projects}
 \begin{tabularx}{\textwidth}{ 
-  >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
-  >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
+  >{\hsize=1\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X}
   \hspace*{0.03mm} 
-  {Research Assistant} & Remote \\
-  \hspace*{0.03mm}
-  \footnotesize\textit{Queen's University Belfast} & {\footnotesize{Jan 2024\textemdash Present}}
+  {\textbf{SGA Attendance Manager}} $\vert$  \small{\textit{Python, JavaScript, TypeScript, MySQL, Flask, React.js, Node.js, Axios, Agile}} \\
 \end{tabularx}
-\vspace{-5mm}
+\vspace{-6.5mm}
 \begin{itemize}[leftmargin=20pt, rightmargin=0cm]
-    \item Collaborating with professor and PHD candidate in targeting algorithm aversion via hybrid intelligence.
-    \item Outline, develop, and host interactive experiment using python libraries, Alfred3 package, and Mortimer.  
-    \item Analyze and interpret quantitative results using R, and express findings in doctoral thesis. 
+    \item Spearheaded development of backend system of custom website for Student Government Association, streamlining the attendance system and membership tracking.
+    \item Thoughtfully designed and implemented SQL databases to handle attendance records, membership data, and process unexcused absences, utilized Flask to create RESTful APIs for seamless client-server communication.
+    \item Engineered backend functionality for managing attendance updates and roster modifications, setting the groundwork for upcoming features such as automated email notifications and issue resolution mechanisms.
 \end{itemize}
 
 \begin{tabularx}{\textwidth}{ 
   >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
   >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
   \hspace*{0.03mm} 
-  {EXP Makerspace Staff} & Boston, MA \\
-  \hspace*{0.03mm}
-  \footnotesize\textit{Northeastern University} & {\footnotesize{Feb 2023\textemdash Present}}
+  {\textbf{2048 AI} $\vert$ \small{\textit{Python, Matplotlib, unittest}}} \\
 \end{tabularx}
-\vspace{-5mm}
+\vspace{-6.5mm}
+\begin{itemize}[leftmargin=20pt, rightmargin=0cm]
+    \item Developed an AI program for the classic 2048 game that optimizes gameplay from any given state.
+    \item Achieved a 100\% success rate in reaching the 2048 tile in under 17 minutes from the initial state.
+    \item Utilized expectimax search with heuristics that prioritize merging the most tiles and maximizing largest tile.
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{ 
+  >{\hsize=1\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X}
+  \hspace*{0.03mm} 
+  {\textbf{Battleship (with a twist)} $\vert$ \small{\textit{Java, JSON, JUnit5, Socket, Multi-threading, MVC, UML}}}
+\end{tabularx}
+\vspace{-6.5mm}
+\begin{itemize}[leftmargin=20pt, rightmargin=0cm]
+    \item Engineered a command-line version of classic Battleship game using MVC architecture and UML modeling, featuring single-player mode against an AI and multiplayer mode with socket-based communication.
+    \item Implemented client-server communication using JSON encoding, ensuring robust and efficient data exchange.
+    \item Sharpened SOLID principles and unit testing skills to promote clean, reliable, and scalable code structure.
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{ 
+  >{\hsize=1\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X}
+  \hspace*{0.03mm} 
+  {\textbf{Bullet Journal} $\vert$ \small{\textit{Java, JavaFX, JSON, JUnit5}}}
+\end{tabularx}
+\vspace{-6.5mm}
+\begin{itemize}[leftmargin=20pt, rightmargin=0cm]
+    \item Built journal in Java that allows users to add, delete, edit, and mark completion status of events and tasks.
+    \item Included interactive GUI using JavaFX with additional features such as weekly task statistics and persistence.
+\end{itemize}
+
+% EXPERIENCE
+\section*{ \rmfamily Experience}
+\begin{tabularx}{\textwidth}{ 
+  >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
+  >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
+  \hspace*{0.03mm} 
+  \textbf{Queen's University Belfast}  $\vert$ \small\textit{Research Assistant} $\vert$  \small\textit{Remote}  & \textit{{Jan 2024\textemdash Present}} \\
+\end{tabularx}
+\vspace{-6.5mm}
+\begin{itemize}[leftmargin=20pt, rightmargin=0cm]
+    \item Collaborating with professor and PHD candidate in targeting algorithm aversion via hybrid intelligence.
+    \item Outline, develop, host interactive online experiment using python libraries, Alfred3 package, and MongoDB.  
+    \item Analyze and interpret quantitative results using R, and express findings in doctoral thesis and OSF. 
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{ 
+  >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
+  >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
+  \hspace*{0.03mm} 
+  \textbf{Northeastern University} $\vert$ \small\textit{EXP Makerspace Student Staff} $\vert$  \small\textit{Boston, MA} &  \textit{{Feb 2023\textemdash Present}}
+\end{tabularx}
+\vspace{-6.5mm}
 \begin{itemize}[leftmargin=20pt, rightmargin=0cm]
     \item Design and build makerspace infrastructure and initiatives at new EXP science and engineering building.
     \item Lead orientation tours, training sessions, workshops, provide project support, and ensure safety of patrons.
-    \item Oversee equipment maintenance and gain expertise in all shops (sewing, laser cutting, 3D Modeling). 
+    \item Oversee equipment maintenance and gain expertise on all equipment and workshops. 
 \end{itemize}
 
 \begin{tabularx}{\textwidth}{ 
   >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
   >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
   \hspace*{0.03mm} 
-  {Barista} & Boston, MA \\
-  \hspace*{0.03mm}
-  \footnotesize\textit{Starbucks Coffee Company} & {\footnotesize{June 2021\textemdash May 2022}}
+  \textbf{Starbucks Coffee Company} $\vert$ \small\textit{Barista Trainer} $\vert$  \small\textit{Boston, MA} & \textit{{June 2021\textemdash May 2022}}
 \end{tabularx}
-\vspace{-5mm}
+\vspace{-6.5mm}
 \begin{itemize}[leftmargin=20pt, rightmargin=0cm]
     \item Collaborated with team members to fulfill customer orders in a fast-paced environment.
     \item "Employee of the Quarter" awarded twice for outstanding work ethic, engagement, and training new baristas.
 \end{itemize}
 
-% PROJECTS
-\section*{Projects}
-\begin{tabularx}{\textwidth}{ 
-  >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
-  >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
-  \hspace*{0.03mm} 
-  {\textbf{2048 AI}} \\
-\end{tabularx}
-\vspace{-5mm}
-\begin{itemize}[leftmargin=20pt, rightmargin=0cm]
-    \item Developed an AI program for the 2048 game that optimizes gameplay from any given state.
-    \item Achieved a 100\% success rate in reaching the 2048 tile in under 17 minutes from the initial state.
-    \item Implemented expectimax search algorithm with heuristics prioritizing moves that merge the most tiles and maximize the largest tile.
-    \item Conducted functionality tests using unittest and visualized game states with MatPlotLib.
-\end{itemize}
-\begin{tabularx}{\textwidth}{ 
-  >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
-  >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
-  \hspace*{0.03mm} 
-  {\textbf{Battleship (with a twist)}}\\
-\end{tabularx}
-\vspace{-5mm}
-\begin{itemize}[leftmargin=20pt, rightmargin=0cm]
-    \item Built a command-line version of classic Battleship game in Java, featuring single-player mode against an AI and multiplayer mode with socket-based communication.
-    \item Implemented client-server communication using JSON encoding, ensuring robust and efficient data exchange in multiplayer mode.
-    \item Applied Model-View-Controller (MVC) design pattern and adhered to SOLID principles, promoting clean, maintainable, and scalable code structure.
-    % \item Achieved 90\% code coverage with unit tests using JUnit5 framework, ensuring high reliability and accuracy of game logic and functionality.
-\end{itemize}
-\begin{tabularx}{\textwidth}{ 
-  >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
-  >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
-  \hspace*{0.03mm} 
-  {\textbf{Bullet Journal}}\\
-\end{tabularx}
-\vspace{-5mm}
-\begin{itemize}[leftmargin=20pt, rightmargin=0cm]
-    \item Developed a feature-rich bullet journal application in Java, allowing users to add, delete, edit, and track completion status of events and tasks.
-    \item Designed an interactive GUI using JavaFX, incorporating features such as weekly task statistics and data persistence for enhanced user experience.
-    \item Applied SOLID principles to ensure modular and maintainable code, including single responsibility by separating event handling and controllers, and open/close principle by utilizing interfaces for extensibility.
-    \item Implemented dependency injection to adhere to dependency inversion principle, enhancing testability and flexibility by passing dependencies through constructors.
-\end{itemize}
-
-% \begin{tabularx}{\textwidth}{ 
-%   >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
-%   >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
-%   \hspace*{0.03mm} 
-%   {Aquasense}\\
-% \end{tabularx}
-% \begin{itemize}
-%     \item 
-% \end{itemize}
-
-% ACTIVITIES
-\section*{Activities}
-\begin{tabularx}{\textwidth}{ 
-  >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
-  >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
-  \hspace*{0.03mm} 
-  {NEU Student Government Association} & {Jan 2024\textemdash April 2024}\\
-  \hspace*{0.03mm} 
-  {\footnotesize\textit{Back-end Software Engineer}}
-\end{tabularx}
-\vspace{-5mm}
-\begin{itemize}[leftmargin=20pt, rightmargin=0cm]
-    \item Developed a scalable backend system for the SGA Attendance Manager using Python and Flask, enabling efficient tracking of membership and attendance.
-    \item Designed and implemented SQL databases to handle attendance records, membership data, and process unexcused absences, ensuring reliable and accurate data management.
-    \item Utilized Flask to create RESTful APIs for client-server communication, facilitating seamless interaction between the frontend and backend components.
-    \item Implemented backend logic for processing attendance changes and removals from the roster, preparing the system for future enhancements like automated email notifications and issue resolution blocks.
-\end{itemize}
-\begin{tabularx}{\textwidth}{ 
-  >{\hsize=0.7\textwidth\linewidth=\textwidth\raggedright\arraybackslash}X 
-  >{\hsize=0.3\textwidth\linewidth=\textwidth\raggedleft\arraybackslash}X}
-  \hspace*{0.03mm} 
-  {Product Development Team, Forge}&{Jan 2023\textemdash April 2023}\\
-  \hspace*{0.03mm} 
-  {\footnotesize\textit{Software Engineer}}
-\end{tabularx}
-\vspace{-5mm}
-\begin{itemize}[leftmargin=20pt, rightmargin=0cm]
-    \item Led the development of a water bottle gadget using Arduino Nano and eTape sensor technology to track daily water intake, enhancing user health and hydration awareness.
-    \item Utilized React framework to design and implement an intuitive and responsive user interface, enabling seamless interaction with the water intake tracking system.
-    \item Developed a web application using HTML, CSS, and JavaScript to display and visualize the collected water intake data, providing users with insights into their hydration habits over time.
-    \item Collaborated with backend developers to integrate the frontend with the Flask backend, ensuring smooth data flow and real-time updates between the user interface and the database.
-\end{itemize}
-
 % TECHNICAL SKILLS
-\section*{Technical Skills and Interests}
-\begin{itemize}[leftmargin=20pt, rightmargin=0cm]
-    \item Languages: Java, Python, SQL, HTML+CSS, Javascript 
-%     Libraries : Python Libraries, ReactJs
-%     Web Dev Tools: Nodejs, VScode, Git, Github
-% Frameworks: ReactJs
-% Cloud/Databases: MongoDb, Firebase, Relational Database(mySql)
-% Areas of Interest: Web Design and Development, Cloud Security.
-% Soft Skills: Problem Solving, Self-learning, Presentation, Adaptability
-\end{itemize}
+\section*{ \rmfamily Technical Skills and Interests}
+\hspace*{0.03mm} \textbf{Languages:} Java, Python, R, HTML5, CSS, JavaScript, Typescript, Bash\\
+\hspace*{0.03mm} \textbf{Database \& Query:} MySQL, NoSQL, SQL, SQL Server, MongoDB\\
+\hspace*{0.03mm} \textbf{Frameworks \& Libraries:} Flask, React.js, Next.js, Node.js, NumPy, Pandas, Matplotlib, Scikit-Learn, JUnit, unittest\\
+% \hspace*{0.03mm} Scikit-Learn, JUnit, unittest\\
+\hspace*{0.03mm} \textbf{DevOps \& Tools:} Continuous Integration (CI), Docker, Git, Github Actions \\
+\hspace{0.03mm} \textbf{Interests/Hobbies:} SWE, ML/AI, Healthcare, DIY, outdoor activities, strategic games, culinary arts, music, cosmetology
 
 \end{document}
